@@ -9,7 +9,7 @@ const PokemonDetails = () => {
   console.log(id);
   async function downloadPokemon() {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    // console.log(response.data);
+    console.log(response);
     setPokemon({
       name: response.data.name,
       image: response.data.sprites.other.dream_world.front_default,

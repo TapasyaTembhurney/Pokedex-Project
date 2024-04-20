@@ -86,9 +86,7 @@ function PokemonList() {
       <div className='controls'>
         {/* <button disabled={prevUrl == null} onClick={() => setPokedexUrl(prevUrl)} >Prev</button> */}
         <button disabled={pokemonListState.prevUrl == null} onClick={() => setPokemonListState(
-          {...pokemonListState, pokedexUrl: pokemonListState.prevUrl} XMLHttpRequestUpload
-          
-          )} >Prev</button>
+          {...pokemonListState, pokedexUrl: pokemonListState.prevUrl})} >Prev</button>
             {/* <button disabled={nextUrl == null} onClick={() => setPokedexUrl(nextUrl)} >Next</button> */}
             <button disabled={pokemonListState.nextUrl == null} onClick={() => setPokemonListState({...pokemonListState, pokedexUrl: pokemonListState.nextUrl})} >Next</button>
       </div>
